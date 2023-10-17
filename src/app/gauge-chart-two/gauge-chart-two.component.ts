@@ -18,29 +18,33 @@ export class GaugeChartTwoComponent implements OnInit {
     this.createChart();
   }
 
-  createChart(){
+  createChart() {
 
     this.chart = new Chart("MyChart", {
       type: "doughnut", //this denotes tha type of chart
 
       data: {// values on X-Axis
-        labels: ['Red', 'Pink','Green','Yellow','Orange','Blue', ],
-	       datasets: [{
-    label: 'My First Dataset',
-    data: [300, 240, 100, 432, 253, 34],
-    backgroundColor: [
-      'red',
-      'pink',
-      'green',
-			'yellow',
-      'orange',
-      'blue',
-    ],
-    hoverOffset: 4
-  }],
+        labels: ['Red', 'Pink', 'Green', 'Yellow', 'Orange', 'Blue',],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [300, 240, 100, 432, 253, 34],
+          backgroundColor: [
+            'red',
+            'pink',
+            'green',
+            'yellow',
+            'orange',
+            'blue',
+          ],
+          hoverOffset: 4
+        }],
+
       },
       options: {
-        aspectRatio:2.5
+        aspectRatio: 2.5,
+        cutout:'90%',
+        circumference:180,
+        rotation:270
       }
 
     });
