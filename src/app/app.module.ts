@@ -18,7 +18,7 @@ import { GaugeOneComponent } from './gauge-one/gauge-one.component'
 
 import { GaugeChartTwoComponent } from './gauge-chart-two/gauge-chart-two.component';
 import { GaugeModule } from 'angular-gauge';
-// import { NgxGaugeModule } from 'ngx-gauge';
+import { NgxGaugeModule } from 'ngx-gauge';
 
 
 
@@ -36,7 +36,7 @@ FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
     BrowserModule,
     AppRoutingModule,
     FusionChartsModule,
-    // NgxGaugeModule
+    NgxGaugeModule,
     GaugeModule.forRoot()
 
 

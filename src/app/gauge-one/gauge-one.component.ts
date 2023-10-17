@@ -10,11 +10,16 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 })
 export class GaugeOneComponent  implements OnInit {
 
-
-  gaugeType = 'semi';
-  gaugeValue = 28.3;
-  gaugeLabel = "Speed";
-  gaugeAppendText = "km/hr";
+  gaugeType = 'full';
+  gaugeThick = 50;
+  gaugevalue = 150;
+  gaugemax = 2000;
+  gaugethresholds = {
+    '0': { color: 'green' },
+    '500': { color: 'orange' },
+    '1000': { color: 'orangeRed' },
+    '1500': { color: 'red' }
+  };
 
 
   ngOnInit(): void {}
